@@ -1,0 +1,22 @@
+footer {
+  a {
+    padding-right: 20px;
+  }
+}
+
+footer {
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__icon {
+  width: 24px;
+  height: 24px;
+}
+
+@media only screen and (max-width: 320px) {
+  footer {
+      flex-direction: column;
+  }
+}

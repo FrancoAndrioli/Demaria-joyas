@@ -1,0 +1,48 @@
+$width: 100%;
+
+.index__container {
+  display: flex;
+  justify-content: center;
+}
+
+.index__introduccion {
+  display: flex;
+  justify-content: center;
+  border: 3px solid black;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 10px 0;
+  width: $width / 2;
+
+  p {
+      padding-left: 20px;
+  }
+}
+
+.index__content {
+  width: $width / 1.5;
+}
+
+@media only screen and (max-width: 320px) {
+  .index__container {
+      flex-direction: column;
+  }
+
+  .index__introduccion {
+    flex-direction: column;
+}
+}
+
+@media only screen and (max-width: 768px) {
+  .index__container {
+      flex-direction: column;
+  }
+
+  .index__introduccion {
+    flex-direction: column;
+}
+}
+
+
+
+

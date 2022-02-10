@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Licorice&family=Vujahday+Script&display=swap");
+header nav {
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  header nav ul li {
+    color: black;
+    display: inline;
+    margin-right: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 10px; }
+    header nav ul li a {
+      color: black;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: bold;
+      text-align: center;
+      transition: font-size 0.8s; }
+      header nav ul li a:hover {
+        font-size: 28px; }
+
+.nav__subMenu {
+  display: none;
+  position: absolute;
+  top: 40px; }
+
+.nav__subMenu li {
+  display: block;
+  position: relative;
+  margin: 5px 0;
+  width: 100%; }
+
+.nav__container li {
+  display: inline-block;
+  position: relative; }
+  .nav__container li:hover ul {
+    display: block;
+    padding: 0; }
+
+@media only screen and (max-width: 320px) {
+  header nav {
+    flex-direction: column; }
+    header nav ul li a {
+      font-size: 16px; }
+  .nav__container {
+    text-align: left; } }
+
+@media only screen and (max-width: 768px) {
+  header nav {
+    flex-direction: column; }
+    header nav ul li a {
+      font-size: 16px; }
+  .nav__container {
+    text-align: left; } }
+
+footer a {
+  padding-right: 20px; }
+
+footer {
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between; }
+
+.footer__icon {
+  width: 24px;
+  height: 24px; }
+
+@media only screen and (max-width: 320px) {
+  footer {
+    flex-direction: column; } }
+
+.index__title {
+  color: black;
+  font-size: 100px;
+  text-align: center;
+  font-family: 'Licorice', cursive;
+  transition: transform 3s;
+  margin: 60px 0; }
+  .index__title:hover {
+    transform: scale(1.5, 1); }
+
+.index__subtitle {
+  color: black;
+  font-size: 35px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: font-size 1s; }
+  .index__subtitle:hover {
+    font-size: 40px; }
+
+.info-acerca-de__section {
+  margin: 120px 40px 20px;
+  display: grid;
+  grid-template-columns: 50% 50%; }
+
+.info-acerca-de__item {
+  margin: 0px 10px;
+  padding: 20px;
+  align-self: stretch;
+  border: 3px outset; }
+
+.info-acerca-de__item--title {
+  font-size: 30px; }
+
+.productos__title-section--pulseras {
+  color: #7041f0; }
+
+.productos__title-section--cadenas {
+  color: #3f17ac; }
+
+.productos__title-section--relojes {
+  color: #1c055c; }
+
+.productos__title-section--anillos {
+  color: #100333; }
+
+.productos__section {
+  margin: 120px 20px 180px 20px;
+  max-width: 600px; }
+
+.preguntas-frecuentes__title {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: black;
+  font-size: 20px; }
+
+.preguntas-frecuentes__info {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: black;
+  font-size: 16px; }
+
+.section__title {
+  color: black;
+  font-size: 80px;
+  text-align: center;
+  margin-bottom: 50px; }
+
+@media only screen and (max-width: 320px) {
+  .section__title {
+    font-size: 40px; } }
+
+.index__container {
+  display: flex;
+  justify-content: center; }
+
+.index__introduccion {
+  display: flex;
+  justify-content: center;
+  border: 3px solid black;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 10px 0;
+  width: 50%; }
+  .index__introduccion p {
+    padding-left: 20px; }
+
+.index__content {
+  width: 66.66667%; }
+
+@media only screen and (max-width: 320px) {
+  .index__container {
+    flex-direction: column; }
+  .index__introduccion {
+    flex-direction: column; } }
+
+@media only screen and (max-width: 768px) {
+  .index__container {
+    flex-direction: column; }
+  .index__introduccion {
+    flex-direction: column; } }
+
+html {
+  background-image: linear-gradient(to top, grey, white);
+  padding: 30px 60px 30px 60px;
+  background-attachment: fixed; }
+
+p {
+  color: black;
+  font-size: 20px; }
+
+form {
+  font-size: 20px; }
+
+.img__logo-principal {
+  height: 100px;
+  border-radius: 50%;
+  animation-duration: 6s;
+  animation-name: aparecer; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0.1; }
+  100% {
+    opacity: 1; } }
+
+hr {
+  border-color: black;
+  margin-top: 20px; }
+
+.contactForm {
+  display: flex;
+  justify-content: center; }
+
+@media only screen and (max-width: 320px) {
+  html {
+    padding: 20px; }
+  iframe {
+    width: 100%; } }
+
+@media only screen and (max-width: 768px) {
+  html {
+    padding: 20px; }
+  iframe {
+    width: 100%; } }
+
+body {
+  background-color: transparent; }

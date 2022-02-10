@@ -1,0 +1,16 @@
+@mixin font {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: black;
+}
+
+.preguntas-frecuentes {
+  &__title {
+    @include font;
+    font-size: 20px;
+  }
+
+  &__info {
+    @include font;
+    font-size: 16px;
+  }
+}

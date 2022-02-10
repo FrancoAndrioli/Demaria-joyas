@@ -1,0 +1,23 @@
+.index__title {
+  color: black;
+  font-size: 100px;
+  text-align: center;
+  font-family: 'Licorice', cursive;
+  transition: transform 3s;
+  margin: 60px 0;
+
+  &:hover{
+    transform: scale(1.5,1);
+  }
+}
+
+.index__subtitle {
+  color:black;
+  font-size: 35px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: font-size 1s;
+
+  &:hover{
+    font-size: 40px;
+  }
+}
