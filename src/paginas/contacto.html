@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contacto</title>
+    <meta name="description" content="formulario para contacto">
+    <meta name="keywords" content="JOYERIA, CONTACTO">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+        crossorigin="anonymous">
+    <link href="../../css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="../../index.html">
+                    <img class="img__logo-principal" src="../../assets/imagenes/diamante.jpg" alt="logo Demariajoyas">
+                </a>
+                <ul class="nav__container">
+                    <li>
+                        <a href="../../index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="./acerca_de.html">Acerca de nosotros</a>
+                    </li>
+                    <li>
+                        <a href="./productos.html">Productos</a>
+                        <ul class="nav__subMenu">
+                            <li>
+                                <a href="./productos.html#pulseras">Pulseras</a>
+                            </li>
+                            <li>
+                                <a href="./productos.html#cadenas">Cadenas</a>
+                            </li>
+                            <li>
+                                <a href="./productos.html#relojes">Relojes</a>
+                            </li>
+                            <li>
+                                <a href="./productos.html#anillos">Anillos</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./preguntasFrecuentes.html">Preguntas Frecuentes</a>
+                    </li>
+                    <li>
+                        <a href="#">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1 class="section__title">Contacto</h1>
+            <form class="contactForm" action="#">
+                <fieldset class="contactFieldset">
+                    <legend>Contactanos</legend>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="informacion-personal">Nombre</span>
+                        <input type="text" id="informacion-personal" class="form-control" placeholder="Nombre" aria-label="userName" aria-describedby="informacion-personal">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="informacion-personal">Apellido</span>
+                        <input type="text" id="informacion-personal" class="form-control" placeholder="Apellido" aria-label="userLastName" aria-describedby="informacion-personal">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="informacion-personal">Email</span>
+                        <input type="text" id="informacion-personal" class="form-control" placeholder="Email" aria-label="userEmail" aria-describedby="informacion-personal">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="informacion-personal">Telefono</span>
+                        <input type="text" id="informacion-personal" class="form-control" placeholder="Telefono" aria-label="userPhone" aria-describedby="informacion-personal">
+                    </div>
+                    <label for="informacion-personal">Contacto de preferencia:</label>
+                    <select name="contact" id="informacion-personal" class="form-select" aria-label="select">
+                        <option selected></option>
+                        <option value="1">Telefono</option>
+                        <option value="2">Email</option>
+                    </select>
+                    <div class="input-group my-3">
+                        <div class="input-group-text">
+                            <input id="informacion-personal" name="newlester" class="form-check-input mt-0" type="checkbox" value="" aria-label="informacion-personal">
+                        </div>
+                        <label class="form-control" for="informacion-personal">Desea recibir nuestro Newlester?</label>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text">Comentarios</span>
+                        <textarea name="textarea" id="informacion-personal" cols="30" rows="10" placeholder="Comentarios" class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+                    <br>
+                    <button type="reset" class="btn btn-secondary">Restablecer</button>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </fieldset>
+            </form>
+        </main>
+        <footer>
+            <a href="">preguntas frecuentes</a>
+            <a href="">quienes somos</a>
+            <a href="">ayuda al cliente</a>
+            <a href="">terminos y condiciones</a>
+
+            <a href="">
+                <img class="footer__icon" src="./assets/imagenes/twitter.png" alt="twitter">
+            </a>
+            <a href="">
+                <img class="footer__icon" src="./assets/imagenes/instagram.png" alt="instragram">
+            </a>
+            <a href="">
+                <img class="footer__icon" src="./assets/imagenes/facebook.png" alt="facebook">
+            </a>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
