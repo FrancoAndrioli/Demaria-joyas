@@ -38,7 +38,9 @@ header nav {
   position: relative; }
   .nav__container li:hover ul {
     display: block;
-    padding: 0; }
+    padding: 0;
+    background-color: rgba(218, 218, 218, 0.75);
+    z-index: 20; }
 
 @media only screen and (max-width: 320px) {
   header nav {
@@ -94,9 +96,19 @@ footer {
   color: black;
   font-size: 35px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  transition: font-size 1s; }
+  transition: font-size 1s;
+  margin-bottom: 40px; }
   .index__subtitle:hover {
     font-size: 40px; }
+
+.index__carousel {
+  width: 600px;
+  height: 451px; }
+
+@media only screen and (max-width: 320px) {
+  .index__carousel {
+    width: auto;
+    height: auto; } }
 
 .info-acerca-de__section {
   margin: 120px 40px 20px;
@@ -112,6 +124,13 @@ footer {
 .info-acerca-de__item--title {
   font-size: 30px; }
 
+@media only screen and (max-width: 320px) {
+  .info-acerca-de__section {
+    margin: 0;
+    grid-template-columns: 100%; }
+  .info-acerca-de__item {
+    margin: 0 10px 20px; } }
+
 .productos__title-section--pulseras {
   color: #7041f0; }
 
@@ -125,13 +144,29 @@ footer {
   color: #100333; }
 
 .productos__section {
-  margin: 120px 20px 180px 20px;
-  max-width: 600px; }
+  margin: 100px 20px 180px 20px;
+  display: flex;
+  justify-content: center; }
+
+.productos__carousel {
+  width: 600px;
+  height: 600px; }
+
+.productos__img {
+  border-radius: 50%; }
+
+@media only screen and (max-width: 320px) {
+  .productos__carousel {
+    width: auto;
+    height: auto; }
+  .productos__section {
+    margin: 30px 20px 80px 20px; } }
 
 .preguntas-frecuentes__title {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: black;
-  font-size: 20px; }
+  font-size: 20px;
+  margin-bottom: 20px; }
 
 .preguntas-frecuentes__info {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -163,20 +198,21 @@ footer {
   .index__introduccion p {
     padding-left: 20px; }
 
-.index__content {
-  width: 66.66667%; }
-
 @media only screen and (max-width: 320px) {
   .index__container {
-    flex-direction: column; }
+    flex-direction: column;
+    width: 100%; }
   .index__introduccion {
-    flex-direction: column; } }
+    flex-direction: column;
+    width: 100%; } }
 
 @media only screen and (max-width: 768px) {
   .index__container {
-    flex-direction: column; }
+    flex-direction: column;
+    width: 100%; }
   .index__introduccion {
-    flex-direction: column; } }
+    flex-direction: column;
+    width: 100%; } }
 
 html {
   background-image: linear-gradient(to top, grey, white);
@@ -203,8 +239,9 @@ form {
     opacity: 1; } }
 
 hr {
-  border-color: black;
-  margin-top: 20px; }
+  margin: 40px 0;
+  width: 100%;
+  border: 0.5px solid #7e7e7e; }
 
 .contactForm {
   display: flex;

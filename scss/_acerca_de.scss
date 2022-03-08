@@ -14,3 +14,15 @@
 .info-acerca-de__item--title {
   font-size: 30px;
 }
+
+
+@media only screen and (max-width: 320px) {
+  .info-acerca-de__section {
+    margin: 0;
+    grid-template-columns: 100%;
+  }
+  
+  .info-acerca-de__item {
+    margin: 0 10px 20px;
+  }
+}

@@ -16,8 +16,21 @@
   font-size: 35px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   transition: font-size 1s;
+  margin-bottom: 40px;
 
   &:hover{
     font-size: 40px;
+  }
+}
+
+.index__carousel {
+  width: 600px;
+  height: 451px;
+}
+
+@media only screen and (max-width: 320px) {
+  .index__carousel {
+    width: auto;
+    height: auto;
   }
 }

@@ -12,6 +12,27 @@ $types: (
 }
 
 .productos__section {
-  margin: 120px 20px 180px 20px;
-  max-width: 600px;
+  margin: 100px 20px 180px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.productos__carousel {
+  width: 600px;
+  height: 600px;
+}
+
+.productos__img {
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 320px) {
+  .productos__carousel {
+    width: auto;
+    height: auto;
+  }
+
+  .productos__section {
+    margin: 30px 20px 80px 20px;
+  }
 }

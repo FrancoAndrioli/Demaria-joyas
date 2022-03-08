@@ -19,28 +19,28 @@ $width: 100%;
   }
 }
 
-.index__content {
-  width: $width / 1.5;
-}
-
 @media only screen and (max-width: 320px) {
   .index__container {
-      flex-direction: column;
+    flex-direction: column;
+    width: 100%;
   }
 
   .index__introduccion {
     flex-direction: column;
-}
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .index__container {
-      flex-direction: column;
+    flex-direction: column;
+    width: 100%;
   }
 
   .index__introduccion {
     flex-direction: column;
-}
+    width: 100%;
+  }
 }
 
 
